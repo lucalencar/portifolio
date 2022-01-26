@@ -15,7 +15,7 @@ function App() {
 
   return (
 
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Navbar onChangeTheme={changeTheme} />
