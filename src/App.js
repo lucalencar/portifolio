@@ -22,10 +22,10 @@ function App() {
         <S.Box>
           <Routes>
             <Route path={process.env.PUBLIC_URL + '/'} element={<Home />} />
-            <Route path="/about" element={<Home />} />
-            <Route path="/code" element={<Code />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<ErrorPage />} />
+            <Route path={process.env.PUBLIC_URL + '/home'} element={<Home />} />
+            <Route path={process.env.PUBLIC_URL + '/code'} element={<Code />} />
+            <Route path={process.env.PUBLIC_URL + '/contact'} element={<Contact />} />
+            <Route path={process.env.PUBLIC_URL + '*'} element={<ErrorPage />} />
           </Routes>
         </S.Box>
       </ThemeProvider>
