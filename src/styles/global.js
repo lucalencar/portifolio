@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     * {
         font-family: 'Roboto Condensed', sans-serif;
         font-weight: bold;
+        font-size: 18px;
     }
 
 `;
