@@ -21,7 +21,7 @@ function App() {
         <Navbar onChangeTheme={changeTheme} />
         <S.Box>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/portifolio" element={<Home />} />
             <Route path="/about" element={<Home />} />
             <Route path="/code" element={<Code />} />
             <Route path="/contact" element={<Contact />} />
