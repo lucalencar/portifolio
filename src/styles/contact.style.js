@@ -1,9 +1,19 @@
 import styled from "styled-components";
+import myBg from '../img/gray.png';
 
+export const Bground = styled.div`
+  background-image: url(${myBg});
+  background-repeat: repeat;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.4;
+`;
 
 export const FormDiv = styled.div`
   display: flex;
   flex: 1;
+  margin-top: 10%;
+  margin-right: 30%;
   justify-content: center;
   align-items: center;
 `;

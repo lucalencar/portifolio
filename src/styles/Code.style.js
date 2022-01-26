@@ -8,7 +8,7 @@ export const Cards = styled.div`
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (208px);
-    grid-template-columns: repeat(3, 208px);
+    grid-template-columns: repeat(4, 208px);
     justify-content: center;
     grid-gap: 50px; 
 `;

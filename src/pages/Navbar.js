@@ -36,7 +36,7 @@ export default function Navbar({ onChangeTheme }) {
                     <S.NavbarExt>
                         <S.NavbarLinkExtended to="/"> Home</S.NavbarLinkExtended>
                         <S.NavbarLinkExtended to="/about"> About</S.NavbarLinkExtended>
-                        <S.NavbarLinkExtended to="/links"> Links</S.NavbarLinkExtended>
+                        <S.NavbarLinkExtended to="/code"> Code</S.NavbarLinkExtended>
                         <S.NavbarLinkExtended to="/contact"> Contact</S.NavbarLinkExtended>
                     </S.NavbarExt>
                 )}

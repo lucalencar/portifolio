@@ -21,7 +21,7 @@ export default function Contact() {
         </C.Form>
       </C.FormDiv>
             </S.LeftBox>
-
+            <S.RightBox ><C.Bground></C.Bground></S.RightBox>
         </S.MainBox>
     );
 }
