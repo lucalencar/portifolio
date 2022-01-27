@@ -23,6 +23,7 @@ export default function useTheme() {
     BoxHoverPrimary: '#121212',
     BoxHoverSecondary: '#f4f4f4',
     TituloPrimary: '#7A4D95',
+    InputHover: '#0096D5',
   }
 
   const themeDark = {
@@ -46,6 +47,7 @@ export default function useTheme() {
     BoxHoverPrimary: '#606060',
     BoxHoverSecondary: '#121212',
     TituloPrimary: '#0096D5',
+    InputHover: '#0096D5',
   }
 
   const [theme, setTheme] = useState(themeDark);

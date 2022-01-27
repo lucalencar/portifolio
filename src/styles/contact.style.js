@@ -37,9 +37,11 @@ export const Input = styled.input`
   border: 1px solid rgba(245, 245, 245, 0.7);
   transition: all 0.3s ease-out;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
-  &:focus,
+  &:focus {
+    box-shadow: 0 0 3px ${props => props.theme.InputHover};
+  }
   &:hover {
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15), 0 1px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px ${props => props.theme.InputHover};
   }
 `;
 
@@ -51,9 +53,13 @@ export const Mensagem = styled.textarea`
   border: 1px solid rgba(245, 245, 245, 0.7);
   transition: all 0.3s ease-out;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
-  &:focus,
+  &:focus {
+    box-shadow: 0 0 3px;
+    color: ${props => props.theme.InputHover}
+  }
   &:hover {
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15), 0 1px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px;
+    color: ${props => props.theme.InputHover};
   }
 `;
 
