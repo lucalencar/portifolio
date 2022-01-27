@@ -8,25 +8,27 @@ export default function Code() {
 
     return (
         <F.MainBox>
-            <F.Titulos>@Git Repositories</F.Titulos>
-        <S.Cards>
-            {repoList.map((repo, index) => (
-                <S.Card>
-                    <S.CardText key={index}>
-                        {repo.name}
-                        <S.CardLanguage key={index}>{repo.language}</S.CardLanguage>
-                    </S.CardText>
-                    <S.CardButtons>
-                        <S.CardButton onClick={() => window.open(repo.html_url, "_blank")}>
-                            View
-                        </S.CardButton>
-                        <S.CardBottomText key={index}>
-                            {repoAno(repo.created_at)}
-                        </S.CardBottomText>
-                    </S.CardButtons>
-                </S.Card>
-            ))}
-        </S.Cards>
+            <F.BottomBox>
+                <F.Titulos>@Git Repositories</F.Titulos>
+                <S.Cards>
+                    {repoList.map((repo, index) => (
+                        <S.Card>
+                            <S.CardText key={index}>
+                                {repo.name}
+                                <S.CardLanguage key={index}>{repo.language}</S.CardLanguage>
+                            </S.CardText>
+                            <S.CardButtons>
+                                <S.CardButton onClick={() => window.open(repo.html_url, "_blank")}>
+                                    View
+                                </S.CardButton>
+                                <S.CardBottomText key={index}>
+                                    {repoAno(repo.created_at)}
+                                </S.CardBottomText>
+                            </S.CardButtons>
+                        </S.Card>
+                    ))}
+                </S.Cards>
+            </F.BottomBox>
         </F.MainBox>
     );
 

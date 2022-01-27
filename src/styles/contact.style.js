@@ -4,7 +4,7 @@ import myBg from '../img/gray.png';
 export const Bground = styled.div`
   background-image: url(${myBg});
   background-repeat: repeat;
-  width: 100vw;
+  width: 50vw;
   height: 100vh;
   opacity: 0.4;
 `;

@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Cards = styled.div`
     background-color: ${props => props.theme.primary};
     color: ${props => props.theme.secondary};
-    padding: 8px 0 48px 0;
-    margin: 80px 0 0 0;
+    padding: 8px 0 100px 0;
+    margin: 0 0 0 0;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (208px);
@@ -30,7 +30,7 @@ export const Card = styled.div`
 `;
 
 export const CardText = styled.div`
-    padding: 20px;
+    padding: 30px;
     font-size: 18px; 
     font-weight: bold;
 `;

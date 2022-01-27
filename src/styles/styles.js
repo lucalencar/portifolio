@@ -11,11 +11,23 @@ padding-left: 3%;
 justify-content: top;
 background-color: ${props => props.theme.primary};
 color: ${props => props.theme.secondary};
+width: 100%;
+height: 100%;
+margin: 0px;
+padding: 0px;
+overflow-x: hidden;
 `;
 
 export const MainBox = styled.div`
-  height: 100%;
+  height: 100vh;
   display: flex;
+`;
+
+export const BottomBox = styled.div`
+  flex: 1 1 0;
+  width: 100vw;
+  height: 100vh;
+
 `;
 
 export const LeftBox = styled.div`
@@ -50,6 +62,7 @@ export const itemLista = styled.li`
 
 export const Titulos = styled.h3`
 color: ${props => props.theme.TituloPrimary};
+padding: 10px;
 `;
 
 export const Texto = styled.div`
