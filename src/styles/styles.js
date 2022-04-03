@@ -21,13 +21,15 @@ overflow-x: hidden;
 export const MainBox = styled.div`
   height: 100vh;
   display: flex;
+  height: calc(var(--vh, 1vh) * 100);
+  width: calc(var(--vh, 1vw) * 100);
+
 `;
 
 export const BottomBox = styled.div`
   flex: 1 1 0;
   width: 100vw;
   height: 100vh;
-
 `;
 
 export const LeftBox = styled.div`
@@ -40,7 +42,6 @@ export const RightBox = styled.div`
   flex: 1 1 0;
   width: 50vw;
   height: 100vh;
-
 `;
 
 

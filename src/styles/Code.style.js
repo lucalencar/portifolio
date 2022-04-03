@@ -4,16 +4,23 @@ export const Cards = styled.div`
     background-color: ${props => props.theme.primary};
     color: ${props => props.theme.secondary};
     padding: 8px 0 100px 0;
-    margin: 0 0 0 0;
+    margin: 0 auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (208px);
     grid-template-columns: repeat(4, 208px);
     justify-content: center;
+    max-width: 1000px;
     grid-gap: 50px; 
+    @media (max-width: 600px) {
+        grid-template-columns: 1fr 1fr;
+      }
+
 `;
 
 export const Card = styled.div`
+        display: grid;
+    grid-gap: 10px;
+    align-items: center;
     background-color: ${props => props.theme.BoxPrimary};
     color: ${props => props.theme.BoxSecondary};
     -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
@@ -41,9 +48,7 @@ export const CardLanguage = styled.div`
 `;
 
 export const CardButtons = styled.div`
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 50px 50px 1fr;
     grid-template-columns: 50px 50px 1fr;
     padding: 15px;
 `;
